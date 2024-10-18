@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <style>
+        
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    background-color: #83029c;
+    color: rgb(248, 1, 1);
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width:300px;
+    height: 300px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: rgb(170, 199, 6);
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(114, 3, 99);
+    border-radius: 70px;
+    box-shadow: 0 10px 30px rgba(235, 1, 21, 0.76);
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    margin: 20px 0;
+    width: 200;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #80028b;
+    color: rgb(245, 245, 245);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3456b4;
+    border-radius: 400px;
+}
+
+form button {
+    background-color: #1606f3;
+    color: rgb(26, 3, 3);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #fa1d00;
+}
+
+@media (max-width: 600px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+    font {
+        color: aliceblue;
+    }
+}
+</style>
+</head>
+<body>
+   
+     <header>
+        <h1>𝕬𝖗𝖗𝖆𝖋𝖎𝖝 𝕸𝖚𝖍𝖆𝖒𝖒𝖆𝖉 𝕴𝖑𝖞𝖆𝖘𝖆'</h1>
+        <img src="arra.jpg" alt="Foto Profil" class="profile-pic">
+        <p>"Berpengalaman  memotivasi tim untuk mencapai tujuan bersama dengan visi yang jelas."</p>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>Tentang Saya</h1>
+        <p>"Mampu memotivasi anggota tim untuk mencapai kinerja terbaik melalui dukungan dan pengakuan."</p>
+        <h3>Keterampilan</h3>
+        <ul class="skills">
+            <li>Leadership</li>
+            <li>Manajemen Waktu</li>
+            <li>Manajemen Keuangan</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portofolio</h2>
+        <div class="project">
+            <h3>Proyek 1</h3>
+            <img src="tim acara.jpeg" alt="tim acara">
+            <p>
+"Selama kurang lebih 3 tahun, saya telah berperan sebagai panitia dalam mempersiapkan berbagai acara mewah yang menuntut tingkat kreativitas tinggi. Pengalaman ini telah mengasah kemampuan saya dalam perencanaan, koordinasi, dan eksekusi, serta membangun jaringan yang kuat</p>
+        </div>
+        <div class="project">
+            <h3>Proyek 2</h3>
+            <img src="bagunan rumah.jpeg" alt="bagunan rumah" width="200">
+            <p>"Saya berpartisipasi dalam proyek pembangunan rumah nenek yang terkena bencana, di mana rumahnya hancur total. Proses pembangunan berlangsung selama kurang lebih 3 bulan, dan pengalaman ini mengajarkan saya tentang pentingnya kerja sama tim dan dedikasi dalam membantu sesama."</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <p>Email: Arrafixanappl@gmail.com</p>
+        <p>Media Sosial: <a href="#">[@arraaafiiix_]</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 🅐🅡🅡🅐🅕🅘🅧 🅜🅤🅗🅐🅜🅜🅐🅓 🅘🅛🅨🅐🅢🅐'</p>
+    </footer>
+</body>
+</html>
